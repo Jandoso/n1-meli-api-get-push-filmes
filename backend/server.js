@@ -12,9 +12,10 @@ app.all('*', (req, res, next) => {
 app.use(router);
 
 app.listen(port, (err) => {
-    if(err){
+    if (err) {
         console.log('Houve um erro ao iniciar o servidor!');
-    }else{
+    } else {
         console.log(`O servidor está rodando na porta ${port}`);
     };
 });
+
